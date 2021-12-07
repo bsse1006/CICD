@@ -6,3 +6,9 @@ describe("GET /", () => {
         request(app).get("/").expect("Hello World!", done);
     })
 });
+
+describe("GET /yasin", () => {
+    it("responds with yasin", (done) => {
+        request(app).get("/yasin").expect("yasin", done);
+    })
+});
